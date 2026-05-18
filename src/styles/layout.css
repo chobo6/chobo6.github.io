@@ -1,0 +1,5 @@
+.portfolio {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 64px;
+}

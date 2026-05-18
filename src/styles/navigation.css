@@ -1,0 +1,10 @@
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.top-nav a {
+  color: var(--text);
+}
