@@ -16,23 +16,45 @@ export const skills = [
 
 export const projects = [
   {
-    title: 'Project One',
-    summary: '사용자의 문제를 해결하기 위해 만든 웹 프로젝트입니다.',
-    role: '기획, UI 구현, 주요 기능 개발',
-    stack: ['React', 'CSS', 'JavaScript'],
+    title: 'LocalQuest',
+    summary: '지역 기반 퀘스트, QR 인증, 리워드, 사업자 관리 기능을 구현한 풀스택 웹 서비스입니다.',
+    stack: [
+      'React',
+      'Redux Toolkit',
+      'Spring MVC',
+      'Java',
+      'MyBatis',
+      'Oracle DB',
+      'JWT',
+      'QR',
+      'Kakao Map API',
+    ],
     links: [
-      { label: 'GitHub', href: 'https://github.com/' },
-      { label: 'Demo', href: '#' },
+      { label: 'GitHub', href: 'https://github.com/chobo6/LocalQuest' },
     ],
   },
   {
-    title: 'Project Two',
-    summary: '팀 또는 개인 프로젝트의 핵심 기능과 성과를 보여주세요.',
-    role: '컴포넌트 설계, 반응형 화면 구현',
-    stack: ['HTML', 'CSS', 'API'],
+    title: 'Pet Lab',
+    summary: '반려동물 펀딩, 커뮤니티, 장바구니, 마이페이지 흐름을 구성한 React 프론트엔드 프로젝트입니다.',
+    stack: ['React', 'React Router', 'React Bootstrap', 'Bootstrap', 'JavaScript', 'CSS'],
     links: [
-      { label: 'GitHub', href: 'https://github.com/' },
-      { label: 'Demo', href: '#' },
+      { label: 'GitHub', href: 'https://github.com/chobo6/pet-lab' },
+    ],
+  },
+  {
+    title: 'Graduation Project',
+    summary: 'PyQt5 GUI와 Arduino 시리얼 통신을 활용해 주차 공간 상태를 확인하는 데스크톱 프로그램입니다.',
+    stack: ['Python', 'PyQt5', 'Arduino', 'Serial Communication', 'Qt Designer'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/chobo6/graduation-project' },
+    ],
+  },
+  {
+    title: 'Project Management System',
+    summary: '게시판, 일정, 프로젝트, 업무, 이슈, 사용자 권한 관리를 포함한 Spring MVC 기반 업무 관리 웹 애플리케이션입니다.',
+    stack: ['Java', 'Spring MVC', 'JSP', 'MyBatis', 'Oracle DB', 'Google Calendar API', 'Maven'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/chobo6/undefined' },
     ],
   },
 ]

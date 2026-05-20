@@ -5,10 +5,6 @@ function ProjectCard({ project }) {
       <p>{project.summary}</p>
       <dl>
         <div>
-          <dt>역할</dt>
-          <dd>{project.role}</dd>
-        </div>
-        <div>
           <dt>기술</dt>
           <dd>{project.stack.join(', ')}</dd>
         </div>
