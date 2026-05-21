@@ -38,6 +38,10 @@
     grid-template-columns: 1fr;
   }
 
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+
   .contact-section {
     align-items: flex-start;
     flex-direction: column;
