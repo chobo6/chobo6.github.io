@@ -1,10 +1,39 @@
 .top-nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   gap: 8px;
   margin-bottom: 40px;
 }
 
-.top-nav a {
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.top-nav button {
+  background: transparent;
   color: var(--text);
+}
+
+.top-nav button.active {
+  background: var(--accent);
+  color: white;
+}
+
+.top-nav .home-button {
+  width: 42px;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+.home-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }

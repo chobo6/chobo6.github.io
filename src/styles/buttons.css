@@ -1,4 +1,5 @@
 .top-nav a,
+.top-nav button,
 .project-links a,
 .contact-links a,
 .primary-button,
@@ -10,7 +11,10 @@
   border-radius: 8px;
   padding: 0 16px;
   color: var(--text-h);
+  border: 0;
+  font: inherit;
   text-decoration: none;
+  cursor: pointer;
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
@@ -18,6 +22,7 @@
 }
 
 .top-nav a:hover,
+.top-nav button:hover,
 .project-links a:hover,
 .contact-links a:hover,
 .primary-button:hover,

@@ -1,4 +1,4 @@
-function Hero() {
+function Hero({ onNavigate }) {
   return (
     <section className="hero-section" id="home">
       <div className="hero-copy">
@@ -9,12 +9,12 @@ function Hero() {
           개발자를 목표로 성장하고 있습니다.
         </p>
         <div className="hero-actions">
-          <a className="primary-button" href="#projects">
+          <button className="primary-button" onClick={() => onNavigate('projects')} type="button">
             프로젝트 보기
-          </a>
-          <a className="secondary-button" href="#contact">
+          </button>
+          <button className="secondary-button" onClick={() => onNavigate('contact')} type="button">
             연락하기
-          </a>
+          </button>
         </div>
       </div>
       <aside className="hero-panel" aria-label="프로필 요약">

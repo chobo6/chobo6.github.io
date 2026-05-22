@@ -1,20 +1,35 @@
+import githubLogo from '../assets/icons/github.svg'
+
 function Contact() {
   return (
     <section className="contact-section" id="contact">
-      <div>
-        <p className="eyebrow">Contact</p>
-        <h2>함께 이야기해요</h2>
-        <p>프로젝트, 협업, 채용 관련 연락을 기다리고 있습니다.</p>
-      </div>
-      <div className="contact-links">
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="https://github.com/chobo6" rel="noreferrer" target="_blank">
-          GitHub
-        </a>
-        <a href="#" rel="noreferrer" target="_blank">
-          Resume
-        </a>
-      </div>
+      <dl className="contact-info">
+        <div>
+          <dt>주소</dt>
+          <dd>천안시 동남구 용곡동</dd>
+        </div>
+        <div>
+          <dt>TEL</dt>
+          <dd>
+            <a href="tel:010-6376-2923">010-6376-2923</a>
+          </dd>
+        </div>
+        <div>
+          <dt>이메일</dt>
+          <dd>
+            <a href="mailto:hongjegue@naver.com">hongjegue@naver.com</a>
+          </dd>
+        </div>
+      </dl>
+      <a
+        className="github-logo-link"
+        href="https://github.com/chobo6"
+        rel="noreferrer"
+        target="_blank"
+        aria-label="GitHub 프로필로 이동"
+      >
+        <img src={githubLogo} alt="" />
+      </a>
     </section>
   )
 }
