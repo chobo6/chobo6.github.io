@@ -1,12 +1,12 @@
 function ProjectCard({ project }) {
   return (
-    <article className="project-card">
+    <article className="project-card spec-panel">
       <h3>{project.title}</h3>
       <p>{project.summary}</p>
       <dl>
         <div>
-          <dt>기술</dt>
-          <dd>{project.stack.join(', ')}</dd>
+          <dt>Stack</dt>
+          <dd>{project.stack.join(' · ')}</dd>
         </div>
       </dl>
       <div className="project-links">

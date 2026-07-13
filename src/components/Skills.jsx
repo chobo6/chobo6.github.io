@@ -34,7 +34,7 @@ function Skills() {
       <SectionHeading eyebrow="Skills" title="기술 스택" />
       <div className="skill-groups">
         {skills.map((group) => (
-          <article className="skill-group" key={group.category}>
+          <article className="skill-group spec-panel" key={group.category}>
             <h3>{group.category}</h3>
             <ul className="skill-list">
               {group.items.map((skill) => (

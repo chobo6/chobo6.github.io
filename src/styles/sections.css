@@ -1,7 +1,7 @@
 .section,
 .contact-section {
-  padding: 80px 0;
-  border-bottom: 1px solid var(--border);
+  padding: 72px 0;
+  border-bottom: 1px solid var(--line);
 }
 
 .section {
@@ -19,13 +19,4 @@
 .section-text {
   max-width: 760px;
   font-size: 18px;
-}
-
-.eyebrow {
-  margin-bottom: 12px;
-  color: var(--accent);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: uppercase;
 }

@@ -3,35 +3,63 @@
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  padding-bottom: 18px;
   margin-bottom: 40px;
+  border-bottom: 1px solid var(--line);
 }
 
 .nav-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 4px;
 }
 
 .top-nav button {
   background: transparent;
-  color: var(--text);
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 14px;
+}
+
+.nav-links button {
+  padding: 0 4px;
+}
+
+.nav-links button::before {
+  content: '/';
+  margin-right: 1px;
+  color: var(--line);
+}
+
+.nav-links button:hover {
+  color: var(--trace);
 }
 
 .top-nav button.active {
-  background: var(--accent);
-  color: white;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.nav-links button.active::before {
+  color: var(--signal);
 }
 
 .top-nav .home-button {
-  width: 42px;
+  width: 40px;
   padding: 0;
   flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.top-nav .home-button.active {
+  border-color: var(--signal);
 }
 
 .home-button svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;

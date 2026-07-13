@@ -1,10 +1,11 @@
 .hero-section {
   min-height: 560px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(0, 1fr) 340px;
   align-items: center;
   gap: 48px;
-  border-bottom: 1px solid var(--border);
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--line);
 }
 
 .hero-copy {
@@ -12,36 +13,36 @@
 }
 
 .hero-description {
-  max-width: 640px;
-  color: var(--text);
-  font-size: 21px;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 32px;
+  max-width: 620px;
+  color: var(--ink-soft);
+  font-size: 20px;
 }
 
 .hero-panel {
   display: grid;
   gap: 16px;
-  padding: 32px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
+  padding: 30px;
   text-align: left;
 }
 
 .profile-mark {
-  width: 88px;
-  height: 88px;
+  width: 56px;
+  height: 56px;
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  background: var(--accent-bg);
-  color: var(--accent);
-  font-size: 28px;
-  font-weight: 800;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero-panel strong {
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.hero-panel p {
+  font-size: 15px;
 }

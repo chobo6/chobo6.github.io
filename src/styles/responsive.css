@@ -18,7 +18,7 @@
 
   .hero-section {
     min-height: auto;
-    padding: 48px 0 64px;
+    padding-bottom: 48px;
   }
 
   .hero-description {
@@ -26,12 +26,15 @@
   }
 
   .hero-panel {
-    padding: 24px;
+    padding: 22px;
   }
 
-  .section,
+  .section {
+    padding: 48px 0;
+  }
+
   .contact-section {
-    padding: 56px 0;
+    padding: 28px;
   }
 
   .project-grid {
@@ -45,5 +48,10 @@
   .contact-section {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 4px;
   }
 }

@@ -1,0 +1,61 @@
+/* Corner registration ticks — the recurring signature motif, styled after
+   crop marks on a technical drawing. Applied to key panels only. */
+.spec-panel {
+  --tick: 14px;
+  position: relative;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(var(--ink) 0 0) left top / var(--tick) 1.5px no-repeat,
+    linear-gradient(var(--ink) 0 0) left top / 1.5px var(--tick) no-repeat,
+    linear-gradient(var(--ink) 0 0) right top / var(--tick) 1.5px no-repeat,
+    linear-gradient(var(--ink) 0 0) right top / 1.5px var(--tick) no-repeat,
+    linear-gradient(var(--ink) 0 0) left bottom / var(--tick) 1.5px no-repeat,
+    linear-gradient(var(--ink) 0 0) left bottom / 1.5px var(--tick) no-repeat,
+    linear-gradient(var(--ink) 0 0) right bottom / var(--tick) 1.5px no-repeat,
+    linear-gradient(var(--ink) 0 0) right bottom / 1.5px var(--tick) no-repeat,
+    var(--surface);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: var(--trace);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 14px;
+  height: 1.5px;
+  background: var(--signal);
+}
+
+.mono-tag {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section,
+.hero-section,
+.contact-section {
+  animation: panel-in 0.4s ease both;
+}

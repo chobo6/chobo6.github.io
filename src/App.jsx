@@ -44,6 +44,10 @@ function App() {
     <main className="portfolio">
       <Navigation activePage={activePage} onNavigate={handleNavigate} />
       <ActivePage onNavigate={handleNavigate} />
+      <footer className="site-footer">
+        <span>chobo6.github.io</span>
+        <span>Built with React · Vite</span>
+      </footer>
     </main>
   )
 }

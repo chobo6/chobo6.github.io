@@ -2,7 +2,7 @@ import githubLogo from '../assets/icons/github.svg'
 
 function Contact() {
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section spec-panel" id="contact">
       <dl className="contact-info">
         <div>
           <dt>주소</dt>

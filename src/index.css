@@ -1,17 +1,18 @@
 :root {
-  --text: #5d6575;
-  --text-h: #171923;
-  --bg: #f7f8fb;
-  --surface: #ffffff;
-  --border: #dde2ea;
-  --accent: #0f766e;
-  --accent-bg: #d9f2ef;
-  --sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    sans-serif;
+  --ink: #12161c;
+  --ink-soft: #4b5560;
+  --paper: #eef1ec;
+  --surface: #fbfcf9;
+  --line: #c9d0c7;
+  --trace: #1d4e89;
+  --signal: #ff5a1f;
+
+  --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
   font: 17px/1.65 var(--sans);
-  color: var(--text);
-  background: var(--bg);
+  color: var(--ink-soft);
+  background: var(--paper);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,6 +30,17 @@ html {
 body {
   min-width: 320px;
   margin: 0;
+  background-image: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--ink) 5%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--ink) 5%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 32px 32px;
 }
 
 #root {
@@ -45,26 +57,43 @@ p {
 h1,
 h2,
 h3 {
-  color: var(--text-h);
-  line-height: 1.15;
-  letter-spacing: 0;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 0 24px;
-  font-size: clamp(42px, 7vw, 76px);
+  font-size: clamp(38px, 6.4vw, 68px);
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 p {
   margin: 0;
 }
 
-a:focus-visible {
-  outline: 3px solid var(--accent-bg);
+a {
+  color: var(--trace);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--signal);
   outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

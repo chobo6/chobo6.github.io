@@ -3,12 +3,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 32px;
+  padding: 40px;
   text-align: left;
 }
 
 .contact-info {
   display: grid;
-  gap: 18px;
+  gap: 4px;
   margin: 0;
 }
 
@@ -16,16 +17,28 @@
   display: grid;
   grid-template-columns: 80px minmax(0, 1fr);
   gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-info div:last-child {
+  border-bottom: 0;
 }
 
 .contact-info dt {
-  color: var(--accent);
-  font-weight: 800;
+  color: var(--trace);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .contact-info dd {
   margin: 0;
-  color: var(--text-h);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 15px;
 }
 
 .contact-info a {
@@ -34,29 +47,28 @@
 }
 
 .contact-info a:hover {
-  color: var(--accent);
+  color: var(--trace);
 }
 
 .github-logo-link {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
+  border: 1px solid var(--line);
+  background: var(--paper);
   transition:
-    border-color 0.2s ease,
-    transform 0.2s ease;
+    border-color 0.15s ease,
+    transform 0.15s ease;
 }
 
 .github-logo-link:hover {
-  border-color: var(--accent);
+  border-color: var(--signal);
   transform: translateY(-2px);
 }
 
 .github-logo-link img {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
 }
