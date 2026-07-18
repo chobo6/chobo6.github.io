@@ -11,6 +11,7 @@ export const skills = [
     category: 'Language',
     items: [
       { name: 'JavaScript', mark: 'JS', color: '#f7df1e', icon: 'javascript' },
+      { name: 'TypeScript', mark: 'TS', color: '#3178c6', icon: 'typescript' },
       { name: 'Java', mark: 'JV', color: '#e76f00', icon: 'java' },
       { name: 'Python', mark: 'PY', color: '#3776ab', icon: 'python' },
     ],
@@ -19,8 +20,8 @@ export const skills = [
     category: 'Frontend',
     items: [
       { name: 'HTML', mark: 'H5', color: '#e34f26', icon: 'html' },
-      { name: 'Next.js', mark: 'N', color: '#111827', icon: 'nextjs' },
       { name: 'React', mark: 'R', color: '#61dafb', icon: 'react' },
+      { name: 'Next.js', mark: 'N', color: '#111827', icon: 'nextjs' },
       { name: 'Redux Toolkit', mark: 'RT', color: '#764abc', icon: 'reduxToolkit' },
     ],
   },
@@ -28,10 +29,26 @@ export const skills = [
     category: 'Backend',
     items: [
       { name: 'Spring MVC', mark: 'SP', color: '#6db33f', icon: 'springMvc' },
+      { name: 'Express', mark: 'EX', color: '#0a0a0a', icon: 'express' },
+      { name: 'Socket.io', mark: 'SIO', color: '#010101', icon: 'socketIo' },
       { name: 'MyBatis', mark: 'MB', color: '#b22222', icon: 'mybatis' },
-      { name: 'Oracle DB', mark: 'DB', color: '#f80000', icon: 'oracleDb' },
       { name: 'JWT', mark: 'JWT', color: '#00b9f1', icon: 'jwt' },
       { name: 'Maven', mark: 'MV', color: '#c71a36', icon: 'maven' },
+    ],
+  },
+  {
+    category: 'Database',
+    items: [
+      { name: 'Oracle DB', mark: 'DB', color: '#f80000', icon: 'oracleDb' },
+      { name: 'PostgreSQL', mark: 'PG', color: '#4169e1', icon: 'postgresql' },
+    ],
+  },
+  {
+    category: 'Infra',
+    items: [
+      { name: 'Docker', mark: 'DK', color: '#2496ed', icon: 'docker' },
+      { name: 'Kubernetes', mark: 'K8S', color: '#326ce5', icon: 'kubernetes' },
+      { name: 'AWS', mark: 'AWS', color: '#ff9900', icon: 'aws' },
     ],
   },
 ]
