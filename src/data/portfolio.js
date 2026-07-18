@@ -55,11 +55,27 @@ export const projects = [
     links: [{ label: 'GitHub', href: 'https://github.com/chobo6/LocalQuest' }],
   },
   {
-    title: 'Pet Lab',
+    title: 'Omok',
     summary:
-      '반려동물 관련 커뮤니티, 장바구니, 마이페이지 흐름을 구성한 React 프론트엔드 프로젝트입니다.',
-    stack: ['React', 'Bootstrap', 'JavaScript'],
-    links: [{ label: 'GitHub', href: 'https://github.com/chobo6/pet-lab' }],
+      'Socket.io 기반 실시간 온라인 오목 게임으로, 렌주룰 금수 판정과 ELO 랭킹전, AI 대전을 구현했습니다.',
+    stack: [
+      'React',
+      'Socket.io',
+      'Express',
+      'PostgreSQL',
+      'Google OAuth',
+      'JWT',
+      'Docker',
+      'Kubernetes',
+    ],
+    links: [{ label: 'GitHub', href: 'https://github.com/chobo6/omok' }],
+  },
+  {
+    title: 'Songpyeon',
+    summary:
+      '마피아42의 인기 미니게임을 Colyseus로 이식한 실시간 멀티플레이어 웹 게임입니다.',
+    stack: ['React', 'TypeScript', 'Colyseus', 'WebSocket', 'Docker', 'AWS EC2'],
+    links: [{ label: 'GitHub', href: 'https://github.com/chobo6/songpyeon' }],
   },
   {
     title: 'Graduation Project',
