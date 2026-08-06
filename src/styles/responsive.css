@@ -10,6 +10,10 @@
     margin-bottom: 24px;
   }
 
+  .nav-links {
+    flex-wrap: nowrap;
+  }
+
   .hero-section,
   .section {
     grid-template-columns: 1fr;
