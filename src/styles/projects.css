@@ -7,40 +7,59 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  padding: 26px;
+  gap: 18px;
+  padding: 20px;
 }
 
-.project-card h3 {
-  margin: 0 0 12px;
+.project-card-trigger {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.project-card-trigger:hover h3 {
+  color: var(--trace);
+}
+
+.project-thumb {
+  display: grid;
+  aspect-ratio: 16 / 9;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-thumb-placeholder {
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.project-card-body h3 {
+  margin: 0 0 8px;
   color: var(--ink);
   font-size: 21px;
 }
 
-.project-card > p {
-  color: var(--ink-soft);
-}
-
-.project-card dl {
-  display: grid;
-  gap: 12px;
-  margin: 20px 0 24px;
-}
-
-.project-card dt {
-  margin-bottom: 6px;
-  color: var(--trace);
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.project-card dd {
+.project-card-body p {
   margin: 0;
-  font-family: var(--mono);
-  font-size: 13px;
-  line-height: 1.9;
+  color: var(--ink-soft);
 }
 
 .project-links {

@@ -53,11 +53,16 @@ export const skills = [
   },
 ]
 
+// 상세 항목(period·role·techDecisions·features·troubleshooting·retrospective)은
+// 아직 작성 전입니다. 값을 채우면 ProjectModal에 그대로 반영됩니다.
 export const projects = [
   {
     title: 'LocalQuest',
     summary:
       '지역 기반 퀘스트, QR 인증, 리워드와 사업자 관리 기능을 구현한 웹 서비스입니다.',
+    image: null,
+    period: '',
+    role: '',
     stack: [
       'React',
       'Redux Toolkit',
@@ -69,12 +74,19 @@ export const projects = [
       'QR',
       'Kakao Map API',
     ],
+    techDecisions: [],
+    features: [],
+    troubleshooting: [],
+    retrospective: '',
     links: [{ label: 'GitHub', href: 'https://github.com/chobo6/LocalQuest' }],
   },
   {
     title: 'Omok',
     summary:
       'Socket.io 기반 실시간 온라인 오목 게임으로, 렌주룰 금수 판정과 ELO 랭킹전, AI 대전을 구현했습니다.',
+    image: null,
+    period: '',
+    role: '',
     stack: [
       'React',
       'Socket.io',
@@ -85,12 +97,19 @@ export const projects = [
       'Docker',
       'Kubernetes',
     ],
+    techDecisions: [],
+    features: [],
+    troubleshooting: [],
+    retrospective: '',
     links: [{ label: 'GitHub', href: 'https://github.com/chobo6/omok' }],
   },
   {
     title: 'Songpyeon',
     summary:
       '마피아42의 인기 미니게임을 Colyseus로 이식한 실시간 멀티플레이어 웹 게임입니다.',
+    image: null,
+    period: '',
+    role: '',
     stack: [
       'React',
       'TypeScript',
@@ -104,20 +123,38 @@ export const projects = [
       'Docker',
       'AWS EC2',
     ],
+    techDecisions: [],
+    features: [],
+    troubleshooting: [],
+    retrospective: '',
     links: [{ label: 'GitHub', href: 'https://github.com/chobo6/songpyeon' }],
   },
   {
     title: 'Graduation Project',
     summary:
       'PyQt5 GUI와 Arduino 시리얼 통신을 사용해 주차 공간 상태를 확인하는 데스크톱 프로그램입니다.',
+    image: null,
+    period: '',
+    role: '',
     stack: ['Python', 'PyQt5', 'Arduino', 'Serial Communication', 'Qt Designer'],
+    techDecisions: [],
+    features: [],
+    troubleshooting: [],
+    retrospective: '',
     links: [{ label: 'GitHub', href: 'https://github.com/chobo6/graduation-project' }],
   },
   {
     title: 'Project Management System',
     summary:
       '게시판, 일정, 프로젝트, 업무, 이슈, 사용자 권한 관리를 포함한 Spring MVC 기반 업무 관리 웹 애플리케이션입니다.',
+    image: null,
+    period: '',
+    role: '',
     stack: ['Java', 'Spring MVC', 'JSP', 'MyBatis', 'Oracle DB', 'Google Calendar API', 'Maven'],
+    techDecisions: [],
+    features: [],
+    troubleshooting: [],
+    retrospective: '',
     links: [{ label: 'GitHub', href: 'https://github.com/chobo6/undefined' }],
   },
 ]

@@ -58,4 +58,17 @@
     flex-direction: column;
     gap: 4px;
   }
+
+  .modal-overlay {
+    padding: 24px 12px;
+  }
+
+  .modal-panel {
+    padding: 24px 20px;
+  }
+
+  .modal-meta {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
