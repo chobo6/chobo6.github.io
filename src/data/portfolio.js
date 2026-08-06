@@ -91,7 +91,19 @@ export const projects = [
     title: 'Songpyeon',
     summary:
       '마피아42의 인기 미니게임을 Colyseus로 이식한 실시간 멀티플레이어 웹 게임입니다.',
-    stack: ['React', 'TypeScript', 'Colyseus', 'WebSocket', 'Docker', 'AWS EC2'],
+    stack: [
+      'React',
+      'TypeScript',
+      'Colyseus',
+      'Express',
+      'WebSocket',
+      'SQLite',
+      'Google OAuth',
+      'JWT',
+      'Vitest',
+      'Docker',
+      'AWS EC2',
+    ],
     links: [{ label: 'GitHub', href: 'https://github.com/chobo6/songpyeon' }],
   },
   {
@@ -110,13 +122,34 @@ export const projects = [
   },
 ]
 
-export const experiences = [
+export const education = [
   {
-    year: '2026',
-    description: '포트폴리오 제작 및 React 프로젝트 학습',
+    period: '2019.03 - 2023.02',
+    school: '나사렛대학교 IT융합학부',
+    description:
+      'C, Java 기반 프로그래밍 기초와 자료구조, 알고리즘을 배우고 운영체제, 컴퓨터네트워크, 데이터베이스, 객체지향프로그래밍 등 컴퓨터공학 전반의 커리큘럼을 이수했습니다.',
   },
   {
-    year: '2025',
-    description: '웹 개발 기초와 Git/GitHub 협업 흐름 학습',
+    period: '2025.10 - 2026.04',
+    school: '휴먼교육센터 - 자바활용 데이터 플랫폼 구축 풀스택 개발자 과정',
+    description:
+      'Java와 Spring MVC로 백엔드 API를 설계하고 MyBatis, Oracle DB로 데이터를 연동했습니다. React와 Redux Toolkit으로 프론트엔드를 구현하고 JWT 인증을 적용해 풀스택 프로젝트를 완성했습니다.',
+  },
+  {
+    period: '2026.05 - 2026.07',
+    school: '휴먼교육센터 - 심층 데이터 분석을 통한 서비스 솔루션 개발자 과정',
+    description:
+      'Python을 활용한 데이터 수집, 전처리, 통계 분석을 학습하고, 머신러닝 모델링과 데이터 시각화를 통해 데이터 기반 서비스 솔루션을 설계했습니다.',
+  },
+]
+
+export const certificates = [
+  {
+    name: '정보처리기사',
+    date: '2022.11',
+  },
+  {
+    name: 'SQLD',
+    date: '2026.03',
   },
 ]

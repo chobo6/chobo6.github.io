@@ -8,7 +8,7 @@
 
 .timeline li {
   display: grid;
-  grid-template-columns: 80px minmax(0, 1fr);
+  grid-template-columns: 130px minmax(0, 1fr);
   gap: 18px;
   padding: 16px 0;
   border-bottom: 1px solid var(--line);
@@ -21,6 +21,16 @@
 .timeline span {
   color: var(--ink);
   font-family: var(--mono);
+  font-weight: 600;
+}
+
+.timeline li > div {
+  display: grid;
+  gap: 6px;
+}
+
+.timeline-title {
+  color: var(--ink);
   font-weight: 600;
 }
 
