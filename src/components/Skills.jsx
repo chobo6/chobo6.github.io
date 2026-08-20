@@ -1,10 +1,12 @@
 import awsIcon from '../assets/icons/aws.svg'
 import dockerIcon from '../assets/icons/docker.svg'
+import elasticsearchIcon from '../assets/icons/elasticsearch.svg'
 import expressIcon from '../assets/icons/express.svg'
 import htmlIcon from '../assets/icons/html.svg'
 import javaIcon from '../assets/icons/java.svg'
 import javascriptIcon from '../assets/icons/javascript.svg'
 import jwtIcon from '../assets/icons/jwt.svg'
+import kafkaIcon from '../assets/icons/kafka.svg'
 import kubernetesIcon from '../assets/icons/kubernetes.svg'
 import mavenIcon from '../assets/icons/maven.svg'
 import mybatisIcon from '../assets/icons/mybatis.png'
@@ -14,8 +16,10 @@ import postgresqlIcon from '../assets/icons/postgresql.svg'
 import pythonIcon from '../assets/icons/python.svg'
 import reactIcon from '../assets/icons/react.svg'
 import reduxToolkitIcon from '../assets/icons/redux-toolkit.svg'
+import redisIcon from '../assets/icons/redis.svg'
 import socketIoIcon from '../assets/icons/socket-io.svg'
 import springMvcIcon from '../assets/icons/spring-mvc.svg'
+import sqliteIcon from '../assets/icons/sqlite.svg'
 import typescriptIcon from '../assets/icons/typescript.svg'
 import { skills } from '../data/portfolio'
 import SectionHeading from './SectionHeading'
@@ -23,11 +27,13 @@ import SectionHeading from './SectionHeading'
 const skillIcons = {
   aws: awsIcon,
   docker: dockerIcon,
+  elasticsearch: elasticsearchIcon,
   express: expressIcon,
   html: htmlIcon,
   java: javaIcon,
   javascript: javascriptIcon,
   jwt: jwtIcon,
+  kafka: kafkaIcon,
   kubernetes: kubernetesIcon,
   maven: mavenIcon,
   mybatis: mybatisIcon,
@@ -37,8 +43,10 @@ const skillIcons = {
   python: pythonIcon,
   react: reactIcon,
   reduxToolkit: reduxToolkitIcon,
+  redis: redisIcon,
   socketIo: socketIoIcon,
   springMvc: springMvcIcon,
+  sqlite: sqliteIcon,
   typescript: typescriptIcon,
 }
 
