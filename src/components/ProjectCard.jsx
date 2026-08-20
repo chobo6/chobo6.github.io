@@ -8,7 +8,9 @@ function ProjectCard({ project, onSelect }) {
         aria-haspopup="dialog"
       >
         <span className="project-thumb" aria-hidden="true">
-          {project.image ? (
+          {project.video ? (
+            <video muted playsInline preload="metadata" src={project.video} />
+          ) : project.image ? (
             <img src={project.image} alt="" />
           ) : (
             <span className="project-thumb-placeholder">이미지 준비 중</span>

@@ -40,22 +40,24 @@ function ProjectModal({ project, onClose }) {
           ✕
         </button>
 
-        <span className="project-thumb project-thumb-large" aria-hidden="true">
-          {project.image ? (
-            <img src={project.image} alt="" />
-          ) : (
-            <span className="project-thumb-placeholder">이미지 준비 중</span>
-          )}
-        </span>
+        {project.video ? (
+          <span className="project-thumb project-thumb-large">
+            <video controls muted preload="metadata" src={project.video} />
+          </span>
+        ) : (
+          <span className="project-thumb project-thumb-large" aria-hidden="true">
+            {project.image ? (
+              <img src={project.image} alt="" />
+            ) : (
+              <span className="project-thumb-placeholder">이미지 준비 중</span>
+            )}
+          </span>
+        )}
 
         <h3 id="project-modal-title">{project.title}</h3>
         <p className="modal-summary">{project.summary}</p>
 
         <dl className="modal-meta">
-          <div>
-            <dt>기간</dt>
-            <dd>{project.period || '작성 예정'}</dd>
-          </div>
           <div>
             <dt>역할</dt>
             <dd>{project.role || '작성 예정'}</dd>

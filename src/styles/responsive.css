@@ -66,9 +66,4 @@
   .modal-panel {
     padding: 24px 20px;
   }
-
-  .modal-meta {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
 }
