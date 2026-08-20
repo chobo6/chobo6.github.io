@@ -1,3 +1,5 @@
+import profilePhoto from '../assets/images/profile-photo.png'
+
 function Hero() {
   return (
     <section className="hero-section" id="home">
@@ -9,15 +11,13 @@ function Hero() {
           개발자 홍제규입니다.
         </h1>
         <p className="hero-description">
-          Java와 Spring을 기반으로 안정적인 서버 로직과 API를 설계하고,
-          데이터베이스 구조까지 고려하는 백엔드 개발자를 목표로 성장하고
-          있습니다.
+          궁금한 걸 대충 넘기지 못해서, 늘 "그래서 정확히 어떻게 되는 거지?"까지
+          파고듭니다. 그렇게 이해한 것들을 직접 만들어보며, 조금씩 나아가는
+          중입니다.
         </p>
       </div>
-      <aside className="hero-panel spec-panel" aria-label="프로필 요약">
-        <span className="profile-mark">HG</span>
-        <strong>Backend Developer</strong>
-        <p>Spring MVC와 MyBatis 기반 서버 개발을 중심으로 공부하고 있습니다.</p>
+      <aside className="hero-panel spec-panel" aria-label="프로필 사진">
+        <img alt="홍제규" className="profile-photo" src={profilePhoto} />
       </aside>
     </section>
   )
