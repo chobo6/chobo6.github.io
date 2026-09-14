@@ -1,3 +1,4 @@
+import repoviewEvalImage from '../assets/images/repoview-eval.png'
 import omokMatchImage from '../assets/images/omok-match.png'
 import songpyeonGameplayImage from '../assets/images/songpyeon-gameplay.png'
 import weathernowDashboardImage from '../assets/images/weathernow-dashboard.png'
@@ -72,7 +73,7 @@ export const projects = [
     title: 'RepoView',
     summary:
       '두 개인 프로젝트를 대상으로 자연어 질문에 파일:라인 인용이 달린 코드 리뷰를 작성해주는 AI 에이전트 도구입니다. 정적 검색과 RAG(임베딩 기반 의미 검색)를 결합하고, 도구 호출 과정을 SSE로 실시간 노출합니다.',
-    image: null,
+    image: repoviewEvalImage,
     role: '개인 프로젝트 — 에이전트 루프, RAG 파이프라인, eval 러너, SSE 스트리밍, 프론트엔드까지 단독 개발',
     stack: ['Python', 'FastAPI', 'SQLite', 'Chroma', 'OpenAI API', 'React', 'Vite'],
     techDecisions: [
